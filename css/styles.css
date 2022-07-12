@@ -54,9 +54,9 @@ img {
 }
 /* base style */
 .container {
-  width: 2000px;
-  padding-right: 200px;
-  padding-left: 200px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -98,14 +98,6 @@ img {
   color: var(--white-cl);
   background-color: var(--accent-txt-cl);
 }
-.logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--accent-txt-cl);
-}
 
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -115,14 +107,35 @@ img {
 .header {
   background-color: var(--light-bg-cl);
 }
+.header-logo {
+  padding-bottom: 25px;
+  padding-top: 24px;
+  margin-right: 93px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-txt-cl);
+}
 .header-container {
   display: flex;
   align-items: center;
 }
 .header-list {
   display: flex;
+  gap: 50px;
 }
+.header-item {
+  display: block;
+}
+.header-nav {
+  margin-right: 331px;
+}
+
 .header-link {
+  padding-bottom: 32px;
+  padding-top: 32px;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -138,9 +151,6 @@ img {
 .header-link-current {
   color: var(--accent-txt-cl);
 }
-.web-cl {
-  color: var(--accent-txt-cl);
-}
 .contact-item {
   color: var(--grey-color);
   text-decoration: none;
@@ -149,6 +159,10 @@ img {
 .contact-item:focus {
   color: var(--accent-txt-cl);
 }
+.contact-items {
+  display: flex;
+  gap: 50px;
+}
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!Hero section!!!!!!!!!! 
@@ -156,9 +170,6 @@ img {
 */
 .hero {
   background-color: #2f303a;
-}
-.hero-container {
-  display: flex;
 }
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -226,6 +237,15 @@ img {
 */
 .footer {
   background-color: var(--dark-bg-cl);
+}
+.footer-logo {
+  margin-right: 93px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-txt-cl);
 }
 .footer-studio {
   color: var(--white-cl);
