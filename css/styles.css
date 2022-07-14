@@ -7,13 +7,12 @@
   --main-txt-cl: #212121;
   --accent-txt-cl: #2196f3;
   --white-cl: #ffffff;
-  --grey-color: #757575;
-  --black-txt-cl: #000000;
+  --grey-cl: #757575;
+  --black-cl: #000000;
+  --btn-focus-cl: #1a81bd;
   /* background-color */
-  --light-bg-cl: #ffffff;
   --dark-bg-cl: #2f303a;
   --grey-bg-cl: #757575;
-  --blue-bg-cl: #1a81bd;
 
   /* others */
 }
@@ -27,6 +26,20 @@ span {
   color: var(--black-txt-cl);
 }
 /* reset styles */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -82,7 +95,7 @@ img {
 .btn:hover,
 .btn:focus {
   color: var(--white-cl);
-  background-color: var(--blue-bg-cl);
+  background-color: var(--btn-focus-cl);
 }
 .btn-current {
   color: var(--white-cl);
@@ -90,7 +103,7 @@ img {
 }
 .btn-dark {
   color: var(--main-txt-cl);
-  background-color: var(--light-bg-cl);
+  background-color: var(--white-cl);
 }
 .btn-dark:hover,
 .btn-dark:focus,
@@ -105,7 +118,7 @@ img {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 .header {
-  background-color: var(--light-bg-cl);
+  background-color: var(--white-cl);
 }
 .header-logo {
   padding-bottom: 25px;
@@ -122,7 +135,8 @@ img {
   display: flex;
   align-items: center;
 }
-.header-list {
+.header-list,
+.contact-items {
   display: flex;
   gap: 50px;
 }
@@ -139,7 +153,7 @@ img {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--black-txt-cl);
+  color: var(--black-cl);
   text-decoration: none;
 }
 .header-link:hover,
@@ -159,10 +173,7 @@ img {
 .contact-item:focus {
   color: var(--accent-txt-cl);
 }
-.contact-items {
-  display: flex;
-  gap: 50px;
-}
+
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!Hero section!!!!!!!!!! 
@@ -179,7 +190,18 @@ img {
 .feature {
   background-color: var(--light-bg-cl);
 }
+.feature-container {
+  display: flex;
+}
+.feature-items {
+  min-width: 270px;
+  min-height: 101px;
+  padding-top: 94px;
+  display: flex;
+  gap: 30px;
+}
 .feature-article {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
