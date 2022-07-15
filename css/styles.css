@@ -13,8 +13,9 @@
   /* background-color */
   --dark-bg-cl: #2f303a;
   --grey-bg-cl: #757575;
-
   /* others */
+  --indent: 30px;
+  --items: 3;
 }
 /* !!!global values!!! */
 body {
@@ -23,7 +24,7 @@ body {
   font-size: 14px;
 }
 span {
-  color: var(--black-txt-cl);
+  color: var(--black-cl);
 }
 /* reset styles */
 .visually-hidden {
@@ -39,6 +40,11 @@ span {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
 h1,
 h2,
@@ -48,6 +54,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -65,7 +72,16 @@ img {
 .font-style {
   font-style: normal;
 }
-/* base style */
+/* !!!!!!!!!!card set!!!!!! */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * var(--items) - 1)) / var(--items);
+}
+/* !!!!!!!!!!base style!!!! */
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -180,8 +196,16 @@ img {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: #2f303a;
 }
+.hero-main {
+  margin-bottom: 30px;
+  padding-left: 255px;
+}
+
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!Features section!!!!!!
@@ -220,14 +244,25 @@ img {
 .portfolio {
   background-color: var(--light-bg-cl);
 }
+.portfolio-container {
+  padding-top: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-main {
+  margin-bottom: 50px;
+  align-content: center;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.portfolio-items {
+  display: flex;
+  gap: 30px;
+}
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!Team section!!!!!!!!!! 
@@ -236,7 +271,16 @@ img {
 .team {
   background-color: #f5f4fa;
 }
+.team-container {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
 .team-main {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
