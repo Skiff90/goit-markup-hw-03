@@ -100,7 +100,7 @@ img {
 }
 .uppertitle {
   font-family: var(--main-font);
-
+  font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
@@ -133,6 +133,7 @@ img {
 */
 .header {
   background-color: var(--white-cl);
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .header-logo {
   padding-bottom: 25px;
@@ -147,7 +148,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border: 1px solid rgba(236, 236, 236, 1);
 }
 .header-list,
 .contact-items {
@@ -343,6 +343,8 @@ img {
 }
 
 .btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
