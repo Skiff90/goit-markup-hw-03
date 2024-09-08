@@ -372,9 +372,7 @@ img {
   line-height: calc(30 / 16);
   color: #757575;
 }
-.portfolio-item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
-}
+
 .wrapper {
   padding: 20px 24px;
   border: 1px solid var(--color-wrapper);
